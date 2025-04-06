@@ -1,4 +1,33 @@
-﻿@model Northwind.EntityModels.Category
+@model Northwind.EntityModels.Category
+@{
+	ViewData["Title"] = "Category Details";
+}
 
+<h1>@ViewData["Title"]</h1>
 <h2>@Model.CategoryName</h2>
 <p>@Model.Description</p>
+
+<div class="categoryDetails">
+	<div class="categoryInfo">
+	<p><strong>Category Name:</strong> @Model.CategoryName</p>
+	<p><strong>Description:</strong> @Model.Description</p>
+	</div>
+
+
+</div>
+
+<div>
+@if (Model.Products.Any())
+{
+	<ul class="list">
+		@foreach (var product in Model.Products)
+		{
+			<li>@product.ProductName</li>
+		}
+	</ul>
+}
+else
+{
+	<p class="no">No product found</p>
+}
+</div>
