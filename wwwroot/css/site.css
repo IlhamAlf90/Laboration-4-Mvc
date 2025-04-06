@@ -33,3 +33,46 @@ body {
 {
     column-count:3;
 }
+
+.categoryDetails 
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color:darksalmon;
+    border-radius: 5px;
+    box-shadow: 2px 2px 2px 2px;
+    margin: 10px auto;
+    
+}
+
+.categoryInfo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    background-color: bisque;
+    box-shadow: 0 0 3px rgba(0,0,0,3);
+    margin: 10px auto;
+}
+.list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+p.No {
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    color:brown;
+}
